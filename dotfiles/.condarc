@@ -1,0 +1,6 @@
+channels:
+  - conda-forge
+create_default_packages:
+  - pip
+  - numpy
+  - mypy
