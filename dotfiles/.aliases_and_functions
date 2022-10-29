@@ -67,6 +67,7 @@ alias tkilla="tmux kill-session -a && tkill"
 # Conda
 ########################################
 alias pyv="python --version"
+alias pyi="python -i ~/.common_imports.py"
 alias condad="conda deactivate"
 alias condals="conda env list"
 

@@ -25,7 +25,8 @@ root: ~/
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+# Reactivate conda for tmux https://github.com/conda/conda/issues/6826
+pre_window: conda deactivate && conda activate
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -44,11 +45,14 @@ root: ~/
 
 windows:
   - editor:
-      layout: main-vertical
+      layout: tiled
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - vim
-        - guard
-  - server: bundle exec rails s
+        - 
+        - 
+        - ranger 
+        - pyi
+
+  - sys_monitor: htop
