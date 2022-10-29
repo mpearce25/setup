@@ -8,6 +8,7 @@ function sync_dotfiles() {
 	# Dotfiles
 	rsync \
 		.aliases_and_functions \
+		.common_imports.py \
 		.condarc \
 		.exports \
 		.gitignore \
