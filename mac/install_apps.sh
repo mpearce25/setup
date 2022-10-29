@@ -55,7 +55,7 @@ brew install --cask google-cloud-sdk
 brew install --cask raspberry-pi-imager
 
 # python
-brew install python@3.10
+brew install python@3.11
 brew install --cask anaconda
 
 # graphics

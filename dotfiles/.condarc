@@ -3,4 +3,9 @@ channels:
 create_default_packages:
   - pip
   - numpy
+  - pandas
+  - matplotlib
   - mypy
+  - isort
+  - black==22.10.0
+  - pytest

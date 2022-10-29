@@ -8,6 +8,7 @@ alias .....="cd ../../../.."
 
 # Folder shortcuts
 alias s="cd ~/s"
+alias setup="cd ~/s/setup"
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Desktop"
 

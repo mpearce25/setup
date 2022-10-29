@@ -26,7 +26,8 @@ root: ~/
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # Reactivate conda for tmux https://github.com/conda/conda/issues/6826
-pre_window: conda deactivate && conda activate
+# Use p310 as default env for python 3.10
+pre_window: conda deactivate && conda activate p310
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
