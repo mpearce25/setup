@@ -19,9 +19,15 @@ function sync_dotfiles() {
 		.zshrc \
 		~;
 
-	# Dotfolders. --mkpath might fail if mac has old version of rsync
-	rsync -r --mkpath .config/tmuxinator/* ~/.config/tmuxinator;
-	rsync -r --mkpath .oh-my-zsh/themes/*  ~/.oh-my-zsh/themes;
+	# Dotfolders
+	# Create folders first since --mkpath isn't available on older versions of rsync
+	TMUXINATOR_DEST=~/.config/tmuxinator
+	mkdir -p $TMUXINATOR_DEST
+	rsync -r .config/tmuxinator/* $TMUXINATOR_DEST
+
+	ZSH_THEMES_DEST=~/.oh-my-zsh/themes
+	mkdir -p $ZSH_THEMES_DEST
+	rsync -r .oh-my-zsh/themes/*  $ZSH_THEMES_DEST
 
 	source ~/.zshenv;
 }
