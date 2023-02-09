@@ -51,6 +51,7 @@ brew install ranger
 brew install rsync
 brew install tldr
 brew install tree
+brew install wget
 brew install --cask google-cloud-sdk
 brew install --cask raspberry-pi-imager
 
