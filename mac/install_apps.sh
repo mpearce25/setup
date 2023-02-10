@@ -48,6 +48,7 @@ brew install gprof2dot
 brew install htop
 brew install jq
 brew install ranger
+brew install ripgrep
 brew install rsync
 brew install tldr
 brew install tree
